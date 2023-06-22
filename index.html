@@ -9,91 +9,144 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CurrencyConverter</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:300,400,700,800&display=swap&subset=latin-ext"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
+      <div class="headerContainer">
         <img class="logo" src="assets/logo-magyarrigo.svg" />
         <p class="projectTitle">CurrencyConverter</p>
         <nav class="navContainer">
           <ul class="navContainer__buttons">
             <li class="navContainer__element">
-              <a href="#incomes" class="navContainer__link">INCOMES</a>
+              <a href="#converter" class="navContainer__link">CONVERTER</a>
             </li>
             <li class="navContainer__element">
-              <a href="#expenses" class="navContainer__link">EXPENSES</a>
+              <a href="#description" class="navContainer__link">DESCRIPTION</a>
             </li>
             <li class="navContainer__element">
               <a href="#aboutMe" class="navContainer__link">ABOUTME</a>
             </li>
           </ul>
-
-          <div class="navContainer__hamburger">
-            <div class="navContainer__hamburger--line"></div>
-            <div class="navContainer__hamburger--line"></div>
-            <div class="navContainer__hamburger--line"></div>
-          </div>
         </nav>
       </div>
     </header>
-    <main class="container main__container">
-      <div class="row aboutMe" id="aboutMe">
-        <div class="col-2 aboutMe__myPicture">
+
+    <main class="container mainContainer">
+      <div class="descriptionContainer" id="description">
+        <h2 class="description--title" id="descriptionTitle">
+          Jak korzystać z kalkulatora
+        </h2>
+        <p class="description--content">
+          Korzystając z tego prostego kalkulatora możesz przeliczyć wartość
+          wybranej waluty na polską złotówkę. Wystarczy wpisać jaką ilość
+          odpowiedniej waluty chcemy przeliczyć na złotego oraz dokonać wyboru
+          waluty - a automatycznie pojawi się wynik. Przeliczenie jest
+          dokonywane na podstawie aktualnej Tabeli Kursów Narodowego Banku
+          Polskiego, według kursu średniego.
+        </p>
+
+        <p class="description--content">
+          Należy pamiętać, że wartość sprzedaży lub zakupu może odbiegać od
+          kursu średniego.
+        </p>
+
+        <p class="description--content">
+          Obsługiwane waluty to: USD- dolar amerykański, CHF - frank
+          szwajcarski, EUR -euro.
+        </p>
+
+        <p class="description--content">
+          Korzystanie z kalkulatora jest proste i bardzo przejrzyste.
+        </p>
+        <p class="description--content"></p>
+        <p class="description--content"></p>
+      </div>
+
+
+      <div class="converterContainer" id="converter">
+        <div class = "formContainer">
+          <form class = "converterForm">
+            <input class = "converterInput" type = "number"/>
+            <select class = "converterSelect">
+              <option value = "EUR">EUR</option>
+              <option value = "CHF">CHF</option>
+              <option value = "USD">USD</option>
+            </select>
+            <button class="askForCurrences">P R Z E L I C Z</button>
+            <div class = "converterResult">TO: WYNIK PLN</div>
+  
+          </form>
+
+        </div>
+        
+        
+      </div>
+
+      <div class="aboutMe" id="aboutMe">
+        <div class="aboutMe__myPicture">
           <div class="aboutMe__myPicture--cirkle"></div>
         </div>
-        <div class="col-10 aboutMe__myCV">
-          <h2 id="about">about Me</h2>
-          <p>
-            I graduated from the Technical University in Budapest. I'm Master of
-            Science in Nuclear Power Engineering. I have been interested in
-            programming since my studies. This year I became interested in
-            creating websites, so I decided to learn English and complete a
-            "Frontend Developer" course at CODERSLAB and "Java Script and React"
-            course at FUTURE COLLARS.
+        <div class="aboutMe__myCV">
+          <h2 class="aboutMe__title" id="about">MOJE KRÓTKIE CV</h2>
+          <p class="aboutMe--content">
+            Jestem absolwentem Politechniki Budapeszteńskiej uzyskując tytuł
+            magistra inżyniera Energetyki Jądrwoej. Już od czasów studiów
+            interesowałem się programowaniem. W ubiegłym roku szczególną uwagę
+            poświęciłem tworzeniu stron internetowych. Rozpocząłem naukę języka
+            angielskiego. Ukończyłem kurs "Frontend Developer" w CODERSLAB oraz
+            "Javascript and React" w FUTURE COLLARS.
           </p>
 
-          <p>
-            Fluent in German, Russian and Hungarian. English - B2. My native
-            language is Polish.
+          <p class="aboutMe--content">
+            Znajomość języków obcych: język węgierski - biegła w mowie i piśmie,
+            język rosyjski - bardzo dobra w mowie i piśmie, język angielski -
+            poziom B2, język niemiecki - poziom B2.
+          </p>
+          <p class="aboutMe--content">
+            Moim językiem ojczystm jest język polski.
           </p>
 
-          <p>I will be happy to answer your questions.</p>
-
-          <p>
-            Basketball is my cup of tea. I was a basketball referee for 25
-            years.
+          <p class="aboutMe--content">
+            Z przyjemnością odpowiem na wszystkie ewentualne pytania.
           </p>
-          <p></p>
-          <p></p>
+
+          <p class="aboutMe--content">
+            Jestem sympatykiem koszykówki oraz biegania. Przez ponad 25 lat
+            byłem sędzią koszykówki. Na koncie mam ukończone biegi maratońskie.
+            Mójm najlepszy rezultat to 2 godziny 50 minut.
+          </p>
+          <p class="aboutMe--content"></p>
+          <p class="aboutMe--content"></p>
         </div>
       </div>
     </main>
     <footer class="footer" id="contact">
-      <div class="footer__container">
-        <div class="footer__container--logo">
-          <img src="./assets/logo-magyarrigo.svg" />
+      <div class="footerContainer">
+        <div class="footerContainer--logo">
+          <img class="logoAtFooter" src="./assets/logo-magyarrigo.svg" />
         </div>
-        <div class="footer__container--buttons">
-          <a href="#balanceSheetResult">INPUTS</a>
-          <a href="#expenses">EXPENSES</a>
+        <div class="footerContainer--buttons">
+          <a class="footerButton" href="#description">DESCRIPTION</a>
+          <a class="footerButton" href="#converter">CONVERTER</a>
         </div>
 
-        <div class="footer__container--contact">
-          <div id="phone">
+        <div class="footerContainer--contact">
+          <div class="phoneNumber" id="phone">
             <img src="./assets/phone.svg" />
             <p>+48 535 092 608</p>
           </div>
-          <div id="mail">
+          <div class="mailBox" id="mail">
             <img src="./assets/mail.svg" />
             <p>b.drozd07@gmail.com</p>
           </div>
         </div>
-        <div class="footer_container--mediaIcons">
+        <div class="footerContainer--mediaIcons">
           <img src="./assets/Twitter.svg" />
           <img src="./assets/Facebook.svg" />
           <img id="tiktok" src="./assets/Tiktok.jpg" />
