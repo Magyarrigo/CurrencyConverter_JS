@@ -3,7 +3,7 @@
 JS - Projekt 2
 Przelicznik walut
 
-https://fc-project-corrency-converter.netlify.app/
+https://fc-project-currency-converter.netlify.app
 
 Poprawnie stworzony projekt musi posiadać:
 
