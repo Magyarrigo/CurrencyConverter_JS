@@ -10,22 +10,16 @@ let targetCurrencyRate = 0;
 
 function getCurrencyListByAxios(event) {
   event.preventDefault();
-  if (isNaN(dataEntryForm[0].value)){
-    
-    alert("wprowadź poprawną wartość: LICZBA DODATNIA");
-    clearForm();
-    return;
-
-  };
-  if (dataEntryForm[0].value <= 0) {
-    
+  if (isNaN(dataEntryForm[0].value)) {
     alert("wprowadź poprawną wartość: LICZBA DODATNIA");
     clearForm();
     return;
   }
-  //if (dataEntryForm[0].value instanceof String || dataEntryForm[0].value == null) {
-  //  console.log("hahahaha");
-  //}
+  if (dataEntryForm[0].value <= 0) {
+    alert("wprowadź poprawną wartość: LICZBA DODATNIA");
+    clearForm();
+    return;
+  }
 
   const currencyCode = document.querySelector("#selectCurrency").value;
 
@@ -38,10 +32,7 @@ function getCurrencyListByAxios(event) {
         return element.code === currencyCode;
       });
 
-      //console.log(dataEntryForm[0].value);
-
       targetCurrencyRate = targetCurrency[0].mid;
-      //console.log(targetCurrencyRate);
 
       let nowyText = currencyConversion(
         targetCurrencyRate,
@@ -51,7 +42,7 @@ function getCurrencyListByAxios(event) {
 
       exchangeResult.innerText = `to: ${nowyText} zł`;
 
-      //console.log(exchangeResult.innerText);
+      
     })
 
     .catch((error) => console.error(error));
