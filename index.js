@@ -1,6 +1,6 @@
 "use strict";
 
-const link = "http://api.nbp.pl/api/exchangerates/tables/a/";
+const link = "https://api.nbp.pl/api/exchangerates/tables/a/";
 const dataEntryForm = document.forms[0];
 let exchangeResult = document.querySelector("#conversionResult");
 dataEntryForm.addEventListener("submit", getCurrencyListByAxios);
