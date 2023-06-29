@@ -17,6 +17,7 @@ function getCurrencyListByAxios(event) {
     alert("wprowadź poprawną wartość: LICZBA DODATNIA");
     clearForm();
     return;
+    
   }
 
   const currencyCode = document.querySelector("#selectCurrency").value;
