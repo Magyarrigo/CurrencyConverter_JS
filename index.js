@@ -42,7 +42,7 @@ function getCurrencyListByAxios(event) {
       exchangeResult.innerText = `to: ${resultText} zł`;
     })
 
-    .catch((error) => console.error(error));
+    .catch((error) => alert(error));
 }
 
 function currencyConversion(currencyRate, quantity) {
