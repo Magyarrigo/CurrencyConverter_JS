@@ -8,16 +8,12 @@ let targetCurrencyRate = 0;
 
 function getCurrencyListByAxios(event) {
   event.preventDefault();
-  if (isNaN(dataEntryForm[0].value)) {
+  const isValueInvalid =
+    isNaN(dataEntryForm[0].value) || dataEntryForm[0].value <= 0;
+  if (isValueInvalid) {
     alert("wprowadź poprawną wartość: LICZBA DODATNIA");
     clearForm();
     return;
-  }
-  if (dataEntryForm[0].value <= 0) {
-    alert("wprowadź poprawną wartość: LICZBA DODATNIA");
-    clearForm();
-    return;
-    
   }
 
   const currencyCode = document.querySelector("#selectCurrency").value;
