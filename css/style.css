@@ -100,9 +100,10 @@ h1 {
   border-color: var(--color-primary);
 }
 .mainContainer {
-  margin-bottom: 50px;
+  padding-top: 70px;
+  /* margin-bottom: 50px; */
   position: relative;
-  top: 70px;
+  /* margin-top: 70px; */
 }
 
 .descriptionContainer {
@@ -124,6 +125,7 @@ h1 {
 }
 
 .converterContainer {
+  
   background-color: rgb(255, 0, 0);
   height: 300px;
   border: var(--color-primary) 2px solid;
@@ -132,16 +134,22 @@ h1 {
 .formContainer {
   margin-top: 100px;
 }
-.converterForm {
+.dataEntryForm {
   display: flex;
   justify-content: space-around;
   align-content: center;
-  height: 50px;
+  height: 100px;
 }
-.converterInput {
+.inputAmount {
   height: 100%;
 }
-.converterResult {
+.selectCurrency{
+  height: 100%;
+}
+.askForCurrences{
+  height: 100%;
+}
+.conversionResult {
   height: 100%;
   border: 5px black;
   background-color: aqua;
@@ -150,6 +158,28 @@ h1 {
   display: flex;
   align-items: center;
 }
+.dataEntryField {
+  height:105px;
+  background-color: green;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+ }
+ .resultField{
+  height:105px;
+  background-color: green;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+ }
+ .labelClass{
+height: 100px;
+ }
+
 
 .aboutMe {
   padding-bottom: 33px;
@@ -242,3 +272,4 @@ h1 {
 #tiktok {
   border-radius: 50%;
 }
+ 

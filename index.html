@@ -37,8 +37,8 @@
       </div>
     </header>
 
-    <main class="container mainContainer">
-      <div class="descriptionContainer" id="description">
+    <main class="container mainContainer" id="description">
+      <div class="descriptionContainer">
         <h2 class="description--title" id="descriptionTitle">
           Jak korzystać z kalkulatora
         </h2>
@@ -68,24 +68,57 @@
         <p class="description--content"></p>
       </div>
 
-
       <div class="converterContainer" id="converter">
-        <div class = "formContainer">
-          <form class = "converterForm">
-            <input class = "converterInput" type = "number"/>
-            <select class = "converterSelect">
-              <option value = "EUR">EUR</option>
-              <option value = "CHF">CHF</option>
-              <option value = "USD">USD</option>
-            </select>
-            <button class="askForCurrences">P R Z E L I C Z</button>
-            <div class = "converterResult">TO: WYNIK PLN</div>
-  
-          </form>
+        <div class="formContainer">
+          <form class="dataEntryForm" id="converterForm">
+            <div class="dataEntryField">
+              <label for="amount">wpisz wartosc</label>
+              <input
+                name="amount"
+                class="inputAmount"
+                type="text"
+                id="inputAmount"
+              />
+            </div>
 
+            <div class="dataEntryField">
+              <label for="currencyName">wybierz walute</label>
+              <select
+                name="currencyName"
+                class="selectCurrency"
+                id="selectCurrency"
+              >
+                <option value="EUR">EUR</option>
+                <option value="CHF">CHF</option>
+                <option value="USD">USD</option>
+              </select>
+            </div>
+
+            <div class="dataEntryField">
+              <label for="requestButton">nacisnij poniżej</label>
+
+              <button
+                type="submit"
+                name="requestButton"
+                class="askForCurrences"
+                id="askForCurrences"
+              >
+                PRZELICZ
+              </button>
+            </div>
+
+            <div class="resultField">
+              <label for="conversionResult">wartość waluty</label>
+              <div
+                name="conversionResult"
+                class="conversionResult"
+                id="conversionResult"
+              >
+                TO: WYNIK PLN
+              </div>
+            </div>
+          </form>
         </div>
-        
-        
       </div>
 
       <div class="aboutMe" id="aboutMe">
@@ -119,7 +152,7 @@
           <p class="aboutMe--content">
             Jestem sympatykiem koszykówki oraz biegania. Przez ponad 25 lat
             byłem sędzią koszykówki. Na koncie mam ukończone biegi maratońskie.
-            Mójm najlepszy rezultat to 2 godziny 50 minut.
+            Mój najlepszy rezultat to 2 godziny 50 minut.
           </p>
           <p class="aboutMe--content"></p>
           <p class="aboutMe--content"></p>
