@@ -139,7 +139,6 @@ h1 {
   height: 100px;
 }
 .inputAmount {
-  
   background-color: var(--color-grey-light);
   border-radius: 15px;
   border: solid 2px var(--color-primary);
@@ -180,13 +179,13 @@ h1 {
   width: 20%;
   background-color: var(--color-primary);
   color: var(--color-white);
-  display:flex;
+  display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
 }
 .resultField {
   height: 70px;
-  width:25%;
+  width: 25%;
   background-color: var(--color-primary);
   color: var(--color-white);
   display: flex;
