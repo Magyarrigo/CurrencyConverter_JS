@@ -139,7 +139,13 @@ h1 {
   height: 100px;
 }
 .inputAmount {
+  
+  background-color: var(--color-grey-light);
+  border-radius: 15px;
+  border: solid 2px var(--color-primary);
   height: 100%;
+  color: var(--color-primary);
+  font-weight: bold;
 }
 .selectCurrency {
   background-color: var(--color-grey-light);
@@ -150,27 +156,37 @@ h1 {
   font-weight: bold;
 }
 .askForCurrences {
+  background-color: var(--color-grey-light);
+  border-radius: 15px;
+  border: solid 2px var(--color-primary);
   height: 100%;
+  color: var(--color-primary);
+  font-weight: bold;
 }
 .conversionResult {
   height: 100%;
-  border: 5px black;
-  background-color: aqua;
+  border: 2px var(--color-primary);
+  border-radius: 15px;
+  background-color: var(--color-grey);
+  color: var(--color-primary);
   font-size: large;
   font-weight: 700;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 .dataEntryField {
   height: 70px;
+  width: 20%;
   background-color: var(--color-primary);
   color: var(--color-white);
-  display: flex;
+  display:flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content:center;
 }
 .resultField {
   height: 70px;
+  width:25%;
   background-color: var(--color-primary);
   color: var(--color-white);
   display: flex;
@@ -179,7 +195,6 @@ h1 {
 }
 .labelClass {
   height: 50px;
-
   text-align: center;
 }
 
