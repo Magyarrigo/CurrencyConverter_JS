@@ -2,9 +2,8 @@
 
 const link = "https://api.nbp.pl/api/exchangerates/tables/a/";
 const dataEntryForm = document.querySelector("#converterForm");
-let exchangeResult = document.querySelector("#conversionResult");
+const exchangeResult = document.querySelector("#conversionResult");
 dataEntryForm.addEventListener("submit", getCurrencyListByAxios);
-let targetCurrencyRate = 0;
 
 function getCurrencyListByAxios(event) {
   event.preventDefault();
@@ -16,7 +15,7 @@ function getCurrencyListByAxios(event) {
     return;
   }
 
-  const currencyCode =event.target.currencyName.value;
+  const currencyCode = event.target.currencyName.value;
 
   axios
     .get(link)
@@ -27,7 +26,7 @@ function getCurrencyListByAxios(event) {
         return element.code === currencyCode;
       });
 
-      targetCurrencyRate = targetCurrency[0].mid;
+      const targetCurrencyRate = targetCurrency[0].mid;
 
       let resultText = currencyConversion(targetCurrencyRate, amount);
       resultText = parseFloat(resultText).toFixed(2);
