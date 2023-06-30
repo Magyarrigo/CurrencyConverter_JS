@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -38,7 +38,7 @@
     </header>
 
     <main class="container mainContainer" id="description">
-      <div class="descriptionContainer">
+      <div class="descriptionContainer sectionContainer">
         <h2 class="description--title" id="descriptionTitle">
           Jak korzystać z kalkulatora
         </h2>
@@ -68,14 +68,14 @@
         <p class="description--content"></p>
       </div>
 
-      <div class="converterContainer" id="converter">
+      <div class="converterContainer sectionContainer" id="converter">
         <div class="formContainer">
           <form class="dataEntryForm" id="converterForm">
             <div class="dataEntryField">
               <label for="amount" class="labelClass">wpisz wartosc</label>
               <input
                 name="amount"
-                class="inputAmount"
+                class="inputAmount dataField"
                 type="text"
                 id="inputAmount"
               />
@@ -87,7 +87,7 @@
               >
               <select
                 name="currencyName"
-                class="selectCurrency"
+                class="selectCurrency dataField"
                 id="selectCurrency"
               >
                 <option value="EUR">EUR</option>
@@ -104,7 +104,7 @@
               <button
                 type="submit"
                 name="requestButton"
-                class="askForCurrences"
+                class="askForCurrences dataField"
                 id="askForCurrences"
               >
                 PRZELICZ
@@ -117,7 +117,7 @@
               >
               <div
                 name="conversionResult"
-                class="conversionResult"
+                class="conversionResult dataField"
                 id="conversionResult"
               >
                 TO: WYNIK PLN
@@ -127,11 +127,11 @@
         </div>
       </div>
 
-      <div class="aboutMe" id="aboutMe">
-        <div class="aboutMe__myPicture">
+      <div class="aboutMe sectionContainer" id="aboutMe">
+        <div class="aboutMe__myPicture aboutMeSection">
           <div class="aboutMe__myPicture--cirkle"></div>
         </div>
-        <div class="aboutMe__myCV">
+        <div class="aboutMe__myCV aboutMeSection">
           <h2 class="aboutMe__title" id="about">MOJE KRÓTKIE CV</h2>
           <p class="aboutMe--content">
             Jestem absolwentem Politechniki Budapeszteńskiej uzyskując tytuł
@@ -176,11 +176,11 @@
         </div>
 
         <div class="footerContainer--contact">
-          <div class="phoneNumber" id="phone">
+          <div class="phoneNumber meansOfContact" id="phone">
             <img src="./assets/phone.svg" />
             <p>+48 535 092 608</p>
           </div>
-          <div class="mailBox" id="mail">
+          <div class="mailBox meansOfContact" id="mail">
             <img src="./assets/mail.svg" />
             <p>b.drozd07@gmail.com</p>
           </div>
