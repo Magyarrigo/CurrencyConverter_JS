@@ -17,16 +17,13 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   font-family: var(--font-open-sans);
   background-color: var(--color-grey);
 }
-
 a {
   text-decoration: none;
 }
-
 h1 {
   font-family: var(--font-open-sans);
   font-size: 1.5rem;
@@ -38,7 +35,6 @@ h1 {
   margin: 0 auto;
   padding: 0 0.9375rem;
 }
-
 .header {
   width: 100%;
   height: 70px;
@@ -69,22 +65,21 @@ h1 {
 }
 .navContainer {
   width: 35%;
-
   right: 1em;
 }
-.navContainer__buttons {
+.navContainerButtons {
   right: 1em;
   width: 55%;
   display: flex;
   justify-content: space-between;
 }
-.navContainer__element {
+.navContainerElement {
   padding: 0 1em;
   &:last-child {
     padding-right: 0;
   }
 }
-.navContainer__link {
+.navContainerLink {
   color: var(--color-white);
   font-weight: 700;
   font-size: 0.6875rem;
@@ -93,8 +88,7 @@ h1 {
   border-bottom: 4px solid transparent;
   letter-spacing: 0.1875rem;
 }
-
-.navContainer__link:hover {
+.navContainerLink:hover {
   color: var(--color-black);
   border-color: var(--color-primary);
 }
@@ -108,19 +102,17 @@ h1 {
   border: var(--color-primary) 2px solid;
   border-radius: 10px;
 }
-
-.description--title {
+.descriptionTitle {
   text-align: center;
   font-weight: bold;
   font-size: 700;
   color: var(--color-primary);
   padding-top: 1em;
 }
-.description--content {
+.descriptionContent {
   padding: 1.5em 3em 0 3em;
   letter-spacing: 2px;
 }
-
 .formContainer {
   margin-top: 100px;
 }
@@ -168,7 +160,6 @@ h1 {
   height: 50px;
   text-align: center;
 }
-
 .aboutMe {
   padding-bottom: 33px;
   display: flex;
@@ -178,36 +169,33 @@ h1 {
   border: var(--color-primary) 2px solid;
   border-radius: 10px;
 }
-.aboutMe__myPicture {
+.aboutMeMyPicture {
   width: 20%;
   background-image: url("/assets/Photo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
-.aboutMe__myCV {
+.aboutMeMyCV {
   width: 80%;
 }
-.aboutMe__title {
+.aboutMeTitle {
   text-align: center;
   font-weight: bold;
   font-size: 700;
   color: var(--color-primary);
   padding-top: 1em;
 }
-.aboutMe--content {
-  padding: 1.5em 3em 0 3em;
+.aboutMeContent {
+  padding: 1.5em 3em 1.5em 3em;
   letter-spacing: 2px;
 }
-
 .footer {
   position: fixed;
   bottom: 0;
-
   width: 100%;
   height: 30px;
   box-shadow: 0 3px 6px var(--color-primary-shadow);
 }
-
 .footerContainer {
   width: 100%;
   height: 100%;
@@ -218,11 +206,10 @@ h1 {
   padding-left: 2em;
   padding-right: 2em;
 }
-
 .logoAtFooter {
   height: 28px;
 }
-.footerContainer--buttons {
+.footerContainerButtons {
   width: 40%;
   justify-content: space-between;
 }
@@ -231,11 +218,9 @@ h1 {
   padding-left: 1em;
   padding-right: 1em;
 }
-
-.footerContainer--contact {
+.footerContainerContact {
   display: flex;
 }
-
 .meansOfContact {
   display: flex;
   padding-right: 1em;
@@ -243,12 +228,11 @@ h1 {
   align-items: center;
   color: var(--color-white);
 }
-.footerContainer--mediaIcons {
+.footerContainerMediaIcons {
   width: 100px;
   display: flex;
   justify-content: space-between;
 }
-
-#tiktok {
+.tiktokIcon {
   border-radius: 50%;
 }
